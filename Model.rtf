@@ -1,0 +1,73 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf340
+{\fonttbl\f0\froman\fcharset0 TimesNewRomanPSMT;\f1\fnil\fcharset0 PalatinoLinotype-Roman;}
+{\colortbl;\red255\green255\blue255;\red0\green116\blue0;\red170\green13\blue145;\red196\green26\blue22;
+\red63\green110\blue116;\red46\green13\blue110;\red28\green0\blue207;\red92\green38\blue153;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww32400\viewh25420\viewkind0
+\deftab360
+\pard\tx360\pardeftab360\pardirnatural\partightenfactor0
+
+\f0\fs36 \cf2 \CocoaLigature0 //\
+//  Model.swift\
+//  Tarot\
+//\
+//  Created by Rodney Cocker on 29/02/2016.\
+//  Copyright \'a9 2016 RMIT. All rights reserved.\
+//\
+\cf0 \
+\cf3 import\cf0  Foundation
+\f1\b\fs24 \CocoaLigature1 \
+\pard\tx360\pardeftab720\li885\ri-340\partightenfactor0
+\cf0 \
+\pard\tx360\pardeftab720\li885\ri-340\partightenfactor0
+\cf3 class\cf0  Model\
+\{\
+    \cf3 var\cf0  answers = [\cf4 "Go forth with faith"\cf0 ,\
+    \cf4 "Magic is on your side"\cf0 ,\
+    \cf4 "Plant the seed and it will grow"\cf0 ]\
+\
+\pard\tx360\pardeftab720\li1168\ri-340\partightenfactor0
+\cf3 init\cf0 ()\
+\{\
+\pard\tx360\pardeftab720\li1452\ri-340\partightenfactor0
+\cf2 // Adds an element to the end of the array\cf0 \
+\pard\tx360\pardeftab720\li1452\ri-340\partightenfactor0
+\cf5 answers\cf0 .\cf6 append\cf0 (\cf4 "Look to the stars to find your answer"\cf0 )\
+\
+\pard\tx360\pardeftab720\li1452\ri-340\partightenfactor0
+\cf2 // Inserts an element at a specified index of the array\
+// all other elements are moved forward one position\cf0 \
+\pard\tx360\pardeftab720\li1452\ri-340\partightenfactor0
+\cf5 answers\cf0 .\cf6 insert\cf0 (\cf4 "You cannot do this alone"\cf0 , atIndex: \cf7 3\cf0 )\
+\
+\pard\tx360\pardeftab720\li1452\ri-340\partightenfactor0
+\cf2 // Removes an element at a specified index of the array\
+// all other elements are moved backward one position\cf0 \
+\pard\tx360\pardeftab720\li1452\ri-340\partightenfactor0
+\cf5 answers\cf0 .\cf6 removeAtIndex\cf0 (\cf7 4\cf0 )\
+\pard\tx360\pardeftab720\li1452\ri-340\partightenfactor0
+\cf2 \
+// Removes the last element in the array\cf0 \
+\pard\tx360\pardeftab720\li1452\ri-340\partightenfactor0
+\cf5 answers\cf0 .\cf6 removeLast\cf0 ()\
+\pard\tx360\pardeftab720\li1168\ri-340\partightenfactor0
+\cf0 \}\
+\pard\tx360\pardeftab720\li885\ri-340\partightenfactor0
+\cf0 \
+\pard\tx360\pardeftab720\li1168\ri-340\partightenfactor0
+\cf2 // Returns the oracles response to the question posed by the user\cf0 \
+\pard\tx360\pardeftab720\li885\ri-340\partightenfactor0
+\cf3 	func\cf0  respond()->\cf8 String\cf0 \
+	\{\
+\pard\tx360\pardeftab720\li1452\ri-340\partightenfactor0
+\cf2 // Returns a random integer within the range of indexes for the answers array\cf0 \
+\pard\tx360\pardeftab720\li1452\ri-340\partightenfactor0
+\cf3 let\cf0  response = \cf8 Int\cf0 (\cf6 arc4random_uniform\cf0 (\cf8 UInt32\cf0 (\cf5 answers\cf0 .\cf8 count\cf0 )))\
+\
+\pard\tx360\pardeftab720\li1452\ri-340\partightenfactor0
+\cf2 // Gets the relevant message from the array at the specified random index\cf0 \
+\pard\tx360\pardeftab720\li1452\ri-340\partightenfactor0
+\cf3 return\cf0  \cf5 answers\cf0 [response]\
+\pard\tx360\pardeftab720\li885\ri-340\partightenfactor0
+\cf0 	\}\
+\}\
+}
