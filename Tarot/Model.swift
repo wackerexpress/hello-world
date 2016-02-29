@@ -28,7 +28,7 @@ class Model
         answers.removeAtIndex(4)
         
         // Removes the last element in the array
-        answers.removeLast()
+        // answers.removeLast()
     }
     
     // Returns the oracles response to the question posed by the user
