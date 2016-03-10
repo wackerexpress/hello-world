@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -18,35 +17,42 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Fool.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="9v0-NN-Ql0">
-                                <rect key="frame" x="180" y="0.0" width="240" height="400"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" image="Fool" translatesAutoresizingMaskIntoConstraints="NO" id="9v0-NN-Ql0" userLabel="Card Image">
+                                <rect key="frame" x="225" y="28" width="150" height="260"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="Qyr-PQ-Sdp"/>
+                                    <constraint firstAttribute="height" constant="260" id="mOQ-nA-y7O"/>
+                                </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Think of a question, then click the button" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u54-Lv-9Gt">
-                                <rect key="frame" x="180" y="408" width="240" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U8B-FO-qmM">
-                                <rect key="frame" x="180" y="437" width="240" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U8B-FO-qmM">
+                                <rect key="frame" x="250" y="560" width="101" height="30"/>
                                 <state key="normal" title="Ask the Oracle"/>
                                 <connections>
                                     <action selector="askTheOracle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="h2s-Fs-7es"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Think of a question, then click the button" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u54-Lv-9Gt">
+                                <rect key="frame" x="225" y="298" width="150" height="61"/>
+                                <accessibility key="accessibilityConfiguration" identifier="answer"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.8784313725490196" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="u54-Lv-9Gt" firstAttribute="top" secondItem="9v0-NN-Ql0" secondAttribute="bottom" constant="8" id="MBh-md-tI5"/>
-                            <constraint firstItem="9v0-NN-Ql0" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="20" id="MDk-JT-ix8"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="9v0-NN-Ql0" secondAttribute="bottom" constant="200" id="TCz-cc-P6L"/>
-                            <constraint firstItem="9v0-NN-Ql0" firstAttribute="centerX" secondItem="u54-Lv-9Gt" secondAttribute="centerX" id="XJd-HF-Fzs"/>
-                            <constraint firstItem="9v0-NN-Ql0" firstAttribute="centerX" secondItem="U8B-FO-qmM" secondAttribute="centerX" id="fNt-9Z-Vcj"/>
-                            <constraint firstItem="9v0-NN-Ql0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iFo-Gw-N33"/>
-                            <constraint firstItem="U8B-FO-qmM" firstAttribute="top" secondItem="u54-Lv-9Gt" secondAttribute="bottom" constant="20" id="t07-TF-H5R"/>
+                            <constraint firstItem="u54-Lv-9Gt" firstAttribute="trailing" secondItem="9v0-NN-Ql0" secondAttribute="trailing" id="0t2-id-WWg"/>
+                            <constraint firstItem="u54-Lv-9Gt" firstAttribute="top" secondItem="9v0-NN-Ql0" secondAttribute="bottom" constant="10" id="9Of-Aj-7r2"/>
+                            <constraint firstItem="u54-Lv-9Gt" firstAttribute="centerX" secondItem="U8B-FO-qmM" secondAttribute="centerX" id="FTw-hJ-Io2"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="U8B-FO-qmM" secondAttribute="bottom" constant="10" id="GgS-v1-f5H"/>
+                            <constraint firstItem="9v0-NN-Ql0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IFz-g9-Z10"/>
+                            <constraint firstItem="u54-Lv-9Gt" firstAttribute="leading" secondItem="9v0-NN-Ql0" secondAttribute="leading" id="KPR-hF-vic"/>
+                            <constraint firstItem="u54-Lv-9Gt" firstAttribute="width" secondItem="9v0-NN-Ql0" secondAttribute="width" id="OoT-Da-ZhW"/>
+                            <constraint firstItem="9v0-NN-Ql0" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="mUn-Me-LWQ"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="imgCard" destination="9v0-NN-Ql0" id="7z4-Yk-O7r"/>
                         <outlet property="lblAnswers" destination="u54-Lv-9Gt" id="5fT-SR-Rbc"/>
                     </connections>
                 </viewController>
@@ -56,6 +62,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Fool.jpg" width="300" height="519"/>
+        <image name="Fool" width="300" height="519"/>
     </resources>
 </document>

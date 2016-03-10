@@ -1,0 +1,181 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf340
+{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;\f1\froman\fcharset0 TimesNewRomanPSMT;}
+{\colortbl;\red255\green255\blue255;\red0\green116\blue0;\red170\green13\blue145;\red196\green26\blue22;
+\red92\green38\blue153;\red46\green13\blue110;\red63\green110\blue116;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww32400\viewh25420\viewkind0
+\deftab360
+\pard\tx360\pardeftab360\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf2 \CocoaLigature0 //\
+//  Model.swift\
+//  Tarot\
+//\
+//  Created by Rodney Cocker on 29/02/2016.\
+//  Copyright \'a9 2016 RMIT. All rights reserved.\
+//\
+
+\f1\fs36 \cf0 \
+
+\f0\fs22 \cf3 import
+\f1\fs36 \cf0  Foundation\
+\
+
+\f0\fs22 \cf3 class
+\f1\fs36 \cf0  Model\
+\{\
+    
+\f0\fs22 \cf3 let
+\f1\fs36 \cf0  majorArcanaCards = [
+\f0\fs22 \cf4 "Fool"
+\f1\fs36 \cf0  : 
+\f0\fs22 \cf4 "Go forth with faith."
+\f1\fs36 \cf0 ,\
+        
+\f0\fs22 \cf4 "Magician"
+\f1\fs36 \cf0  : 
+\f0\fs22 \cf4 "Magic is on your side."
+\f1\fs36 \cf0 ,\
+        
+\f0\fs22 \cf4 "HighPriestess"
+\f1\fs36 \cf0  : 
+\f0\fs22 \cf4 "A powerful woman will be part of the solution."
+\f1\fs36 \cf0 ,\
+        
+\f0\fs22 \cf4 "Empress"
+\f1\fs36 \cf0  : 
+\f0\fs22 \cf4 "Plant the seed and it will grow."
+\f1\fs36 \cf0 ,\
+        
+\f0\fs22 \cf4 "Emperor"
+\f1\fs36 \cf0  : 
+\f0\fs22 \cf4 "You will need to be well organised."
+\f1\fs36 \cf0 ,\
+        
+\f0\fs22 \cf4 "Heirophant"
+\f1\fs36 \cf0  : 
+\f0\fs22 \cf4 "A powerful man will be part of the solution."
+\f1\fs36 \cf0 ,\
+        
+\f0\fs22 \cf4 "Lovers"
+\f1\fs36 \cf0  : 
+\f0\fs22 \cf4 "You cannot do this alone."
+\f1\fs36 \cf0 ,\
+        
+\f0\fs22 \cf4 "Chariot"
+\f1\fs36 \cf0  : 
+\f0\fs22 \cf4 "You need to find the right vehicle to achieve the outcome."
+\f1\fs36 \cf0 ,\
+        
+\f0\fs22 \cf4 "Justice"
+\f1\fs36 \cf0  : 
+\f0\fs22 \cf4 "If you have been fair in your dealings with others, you have nothing to be concerned about."
+\f1\fs36 \cf0 ,\
+        
+\f0\fs22 \cf4 "Hermit"
+\f1\fs36 \cf0  : 
+\f0\fs22 \cf4 "This is not the time to take action, but more study and reflection is required."
+\f1\fs36 \cf0 ,\
+        
+\f0\fs22 \cf4 "WheelOfFortune"
+\f1\fs36 \cf0  : 
+\f0\fs22 \cf4 "The outcome has already been decided."
+\f1\fs36 \cf0 ,\
+        
+\f0\fs22 \cf4 "Strength"
+\f1\fs36 \cf0  : 
+\f0\fs22 \cf4 "You have the skills and abilities required to pull this off."
+\f1\fs36 \cf0 ,\
+        
+\f0\fs22 \cf4 "HangedMan"
+\f1\fs36 \cf0  : 
+\f0\fs22 \cf4 "Try looking at the situation from another perspective."
+\f1\fs36 \cf0 ,\
+        
+\f0\fs22 \cf4 "Death"
+\f1\fs36 \cf0  : 
+\f0\fs22 \cf4 "You must finish something first, before you can move forward."
+\f1\fs36 \cf0 ,\
+        
+\f0\fs22 \cf4 "Temperance"
+\f1\fs36 \cf0  : 
+\f0\fs22 \cf4 "A balanced approach is need for a successful outcome."
+\f1\fs36 \cf0 ,\
+        
+\f0\fs22 \cf4 "Devil"
+\f1\fs36 \cf0  : 
+\f0\fs22 \cf4 "The devil is in the details, make sure you have made every effort for success."
+\f1\fs36 \cf0 ,\
+        
+\f0\fs22 \cf4 "Tower"
+\f1\fs36 \cf0  : 
+\f0\fs22 \cf4 "Something unexpected will happen that will resolve the situation."
+\f1\fs36 \cf0 ,\
+        
+\f0\fs22 \cf4 "Star"
+\f1\fs36 \cf0  : 
+\f0\fs22 \cf4 "Look to the stars, you will find your answer."
+\f1\fs36 \cf0 ,\
+        
+\f0\fs22 \cf4 "Moon"
+\f1\fs36 \cf0  : 
+\f0\fs22 \cf4 "The answer is not known at this time, please ask again later."
+\f1\fs36 \cf0 ,\
+        
+\f0\fs22 \cf4 "Sun"
+\f1\fs36 \cf0  : 
+\f0\fs22 \cf4 "Relax, it is done."
+\f1\fs36 \cf0 ,\
+        
+\f0\fs22 \cf4 "Judgement"
+\f1\fs36 \cf0  : 
+\f0\fs22 \cf4 "Be discerning and consult others before making a decision."
+\f1\fs36 \cf0 ,\
+        
+\f0\fs22 \cf4 "World"
+\f1\fs36 \cf0  : 
+\f0\fs22 \cf4 "The result you are looking for has already happened."
+\f1\fs36 \cf0  ]\
+    \
+    
+\f0\fs22 \cf3 var
+\f1\fs36 \cf0  currentCardImageName = 
+\f0\fs22 \cf4 ""
+\f1\fs36 \cf0 ;\
+\
+    
+\f0\fs22 \cf2 // Return the oracles response to the question posed by the user\
+
+\f1\fs36 \cf0     
+\f0\fs22 \cf3 func
+\f1\fs36 \cf0  respond()->
+\f0\fs22 \cf5 String
+\f1\fs36 \cf0 \
+    \{\
+        
+\f0\fs22 \cf2 // Returns a random integer within the range of indexes for the answers array\
+
+\f1\fs36 \cf0         
+\f0\fs22 \cf3 let
+\f1\fs36 \cf0  response: 
+\f0\fs22 \cf5 Int
+\f1\fs36 \cf0  = \cf5 Int\cf0 (\cf6 arc4random_uniform\cf0 (\cf5 UInt32\cf0 (\cf7 majorArcanaCards\cf0 .\cf5 count\cf0 )))\
+        \
+        
+\f0\fs22 \cf2 // Convert the values in the dictionary to an Array and retrieve the value at the specified index\
+
+\f1\fs36 \cf0         
+\f0\fs22 \cf3 let
+\f1\fs36 \cf0  message = \cf5 Array\cf0 (\cf7 majorArcanaCards\cf0 .\cf5 values\cf0 )[response]\
+        \
+        
+\f0\fs22 \cf2 // Set the current card name based on the specified index\
+
+\f1\fs36 \cf0         \cf7 currentCardImageName\cf0  = \cf5 Array\cf0 (\cf7 majorArcanaCards\cf0 .\cf5 keys\cf0 )[response] \
+        \
+        
+\f0\fs22 \cf3 return
+\f1\fs36 \cf0  message\
+    \}\
+\}\
+\
+}

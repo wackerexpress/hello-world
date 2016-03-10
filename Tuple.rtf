@@ -1,0 +1,33 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf340
+{\fonttbl\f0\fnil\fcharset0 PalatinoLinotype-Roman;}
+{\colortbl;\red255\green255\blue255;\red0\green116\blue0;\red170\green13\blue145;\red92\green38\blue153;
+\red46\green13\blue110;\red63\green110\blue116;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww32400\viewh25420\viewkind0
+\deftab720
+\pard\tx360\pardeftab720\li743\ri-340\partightenfactor0
+
+\f0\b\fs24 \cf2 // Return the oracles response to the question posed by the user\
+\pard\tx360\pardeftab720\li743\ri-340\partightenfactor0
+\cf0     \cf3 func\cf0  respond()-> (cardImageName: \cf4 String\cf0 , cardMessage:\cf4 String\cf0 )\
+    \{\
+\pard\tx360\pardeftab720\li601\ri-340\partightenfactor0
+\cf0             \cf2 // Returns a random integer within the range of indexes for the answers array\
+\cf0             \cf3 let\cf0  response: \cf4 Int\cf0  = \cf4 Int\cf0 (\cf5 arc4random_uniform\cf0 (\cf4 UInt32\cf0 (\cf6 majorArcanaCards\cf0 .\cf4 count\cf0 )))\
+            \
+\pard\pardeftab720\li601\ri-340\partightenfactor0
+\cf0             \cf2 // Convert the values in the dictionary to an Array and retrieve the value at \
+\pard\tx1310\pardeftab720\li601\ri-340\partightenfactor0
+\cf2 	// the specified index\
+\pard\tx360\pardeftab720\li601\ri-340\partightenfactor0
+\cf0             \cf3 let\cf0  cardMessage = \cf4 Array\cf0 (\cf6 majorArcanaCards\cf0 .\cf4 values\cf0 )[response]\
+            \
+            \cf2 // Set the current card name based on the specified index\
+\cf0             \cf3 let\cf0  cardImageName = \cf4 Array\cf0 (\cf6 majorArcanaCards\cf0 .\cf4 keys\cf0 )[response]\
+            \
+\pard\tx360\pardeftab720\li1310\ri-340\partightenfactor0
+\cf2 // This returns the two values in a tuple\cf0 \
+\pard\tx360\pardeftab720\li601\ri-340\partightenfactor0
+\cf0             \cf3 return\cf0  (cardImageName, cardMessage)\
+\pard\tx360\pardeftab720\li743\ri-340\partightenfactor0
+\cf0     \}\
+}

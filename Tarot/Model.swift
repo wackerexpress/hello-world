@@ -10,34 +10,26 @@ import Foundation
 
 class Model
 {
-    var answers = ["Go forth with faith",
-        "Magic is on your side",
-        "Plant the seed and it will grow"]
+    let majorArcanaCards:[String:MajorArcanaCard]
+    var currentCard:MajorArcanaCard = MajorArcanaCard.Fool;
     
+    // Populate the model with a set of Major Arcana Cards
     init()
     {
-        // Adds an element to the end of the array
-        answers.append("Look to the stars to find your answer")
-        
-        // Inserts an element at a specified index of the array
-        // all other elements are moved forward one position
-        answers.insert("You cannot do this alone", atIndex: 3)
-        
-        // Removes an element at a specified index of the array
-        // all other elements are moved backward one position
-        answers.removeAtIndex(4)
-        
-        // Removes the last element in the array
-        // answers.removeLast()
+        majorArcanaCards = MajorArcanaCard.createDeck()
     }
-    
-    // Returns the oracles response to the question posed by the user
+
+
+    // Return the oracles response to the question posed by the user
     func respond()->String
     {
         // Returns a random integer within the range of indexes for the answers array
-        let response = Int(arc4random_uniform(UInt32(answers.count)))
-       
-        // Gets the relevant message from the array at the specified random index
-        return answers[response]
+        let response: Int = Int(arc4random_uniform(UInt32(majorArcanaCards.count)))
+        
+        // Set the current card name based on the specified index
+        currentCard = Array(majorArcanaCards.values)[response]
+        return currentCard.interpretation
     }
+
 }
+
