@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		011A5E601C852AD00044B03B /* MajorArcanaCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011A5E5F1C852ACF0044B03B /* MajorArcanaCard.swift */; };
 		011A5EC81C8562820044B03B /* TarotUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011A5EC71C8562820044B03B /* TarotUITests.swift */; };
+		014C3D0D1C926E3F00A73B38 /* DeckOfCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014C3D0C1C926E3F00A73B38 /* DeckOfCards.swift */; };
 		01999DC31C83AF8B00778D8E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01999DC21C83AF8B00778D8E /* AppDelegate.swift */; };
 		01999DC51C83AF8B00778D8E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01999DC41C83AF8B00778D8E /* ViewController.swift */; };
 		01999DC81C83AF8B00778D8E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01999DC61C83AF8B00778D8E /* Main.storyboard */; };
@@ -32,6 +33,7 @@
 		011A5EC51C8562820044B03B /* TarotUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TarotUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		011A5EC71C8562820044B03B /* TarotUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TarotUITests.swift; sourceTree = "<group>"; };
 		011A5EC91C8562820044B03B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		014C3D0C1C926E3F00A73B38 /* DeckOfCards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeckOfCards.swift; sourceTree = "<group>"; };
 		01999DBF1C83AF8B00778D8E /* Tarot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tarot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01999DC21C83AF8B00778D8E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		01999DC41C83AF8B00778D8E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 			children = (
 				01999E031C83CD4B00778D8E /* Model.swift */,
 				011A5E5F1C852ACF0044B03B /* MajorArcanaCard.swift */,
+				014C3D0C1C926E3F00A73B38 /* DeckOfCards.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -227,6 +230,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				014C3D0D1C926E3F00A73B38 /* DeckOfCards.swift in Sources */,
 				01999E041C83CD4B00778D8E /* Model.swift in Sources */,
 				011A5E601C852AD00044B03B /* MajorArcanaCard.swift in Sources */,
 				01999DC51C83AF8B00778D8E /* ViewController.swift in Sources */,
@@ -403,6 +407,7 @@
 				011A5ECE1C8562820044B03B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		01999DBA1C83AF8B00778D8E /* Build configuration list for PBXProject "Tarot" */ = {
 			isa = XCConfigurationList;

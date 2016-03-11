@@ -14,6 +14,32 @@ enum MajorArcanaCard:Int
 {
     case Fool=1, Magician, HighPriestess, Empress, Emperor, Heirophant, Lovers, Chariot, Justice, Hermit, WheelOfFortune, Strength, HangedMan, Death, Temperance, Devil, Tower, Star, Moon, Sun, Judgement, World
     
+    // This initialiser is used to return a default representation if one is not asked for explicitly.
+    init()
+    {
+        self = .Fool
+    }
+    
+    // This initialiser is used to request a specific card base on its rank.
+    // Note this must be declared as 'Optional' because an invalid number could be provided which would result in 'nil' being returned.
+    init?(number: Int)
+    {
+        switch number
+        {
+        case 1: self = .Fool case 2: self = .Magician case 3: self = .HighPriestess
+        case 4: self = .Empress case 5: self = .Emperor case 6: self = .Heirophant
+        case 7: self = .Lovers case 8: self = .Chariot case 9: self = .Justice
+        case 10: self = .Hermit case 11: self = .WheelOfFortune case 12: self = .Strength
+        case 13: self = .HangedMan case 14: self = .Death case 15: self = .Temperance
+        case 16: self = .Devil case 17: self = .Tower case 18: self = .Star
+        case 19: self = .Moon case 20: self = .Sun case 21: self = .Judgement
+        case 22: self = .World
+        default:
+            return nil
+        }
+    }
+
+    
     var rank:Int
         {
         get
