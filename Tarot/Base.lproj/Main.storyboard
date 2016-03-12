@@ -17,13 +17,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" image="Fool" translatesAutoresizingMaskIntoConstraints="NO" id="9v0-NN-Ql0" userLabel="Card Image">
-                                <rect key="frame" x="225" y="28" width="150" height="260"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="Qyr-PQ-Sdp"/>
-                                    <constraint firstAttribute="height" constant="260" id="mOQ-nA-y7O"/>
-                                </constraints>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U8B-FO-qmM">
                                 <rect key="frame" x="250" y="560" width="101" height="30"/>
                                 <state key="normal" title="Ask the Oracle"/>
@@ -38,17 +31,43 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="303-U0-Qy7" userLabel="Placeholder">
+                                <rect key="frame" x="225" y="28" width="150" height="260"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" fixedFrame="YES" image="Fool" translatesAutoresizingMaskIntoConstraints="NO" id="9v0-NN-Ql0" userLabel="Card Image">
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="260"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pNq-jk-fkI" userLabel="Faded">
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="260"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gqz-Ux-xtR" userLabel="Description">
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="Fzw-74-piZ"/>
+                                    <constraint firstAttribute="height" constant="260" id="rdL-ir-Enu"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.8784313725490196" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="u54-Lv-9Gt" firstAttribute="trailing" secondItem="9v0-NN-Ql0" secondAttribute="trailing" id="0t2-id-WWg"/>
-                            <constraint firstItem="u54-Lv-9Gt" firstAttribute="top" secondItem="9v0-NN-Ql0" secondAttribute="bottom" constant="10" id="9Of-Aj-7r2"/>
-                            <constraint firstItem="u54-Lv-9Gt" firstAttribute="centerX" secondItem="U8B-FO-qmM" secondAttribute="centerX" id="FTw-hJ-Io2"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="U8B-FO-qmM" secondAttribute="bottom" constant="10" id="GgS-v1-f5H"/>
-                            <constraint firstItem="9v0-NN-Ql0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IFz-g9-Z10"/>
-                            <constraint firstItem="u54-Lv-9Gt" firstAttribute="leading" secondItem="9v0-NN-Ql0" secondAttribute="leading" id="KPR-hF-vic"/>
-                            <constraint firstItem="u54-Lv-9Gt" firstAttribute="width" secondItem="9v0-NN-Ql0" secondAttribute="width" id="OoT-Da-ZhW"/>
-                            <constraint firstItem="9v0-NN-Ql0" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="mUn-Me-LWQ"/>
+                            <constraint firstItem="u54-Lv-9Gt" firstAttribute="centerX" secondItem="U8B-FO-qmM" secondAttribute="centerX" id="0vs-gl-MGT"/>
+                            <constraint firstItem="303-U0-Qy7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0vw-Sr-daS"/>
+                            <constraint firstItem="u54-Lv-9Gt" firstAttribute="leading" secondItem="303-U0-Qy7" secondAttribute="leading" id="Brm-Ve-rt1"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="U8B-FO-qmM" secondAttribute="bottom" constant="10" id="J53-2Y-8tb"/>
+                            <constraint firstItem="u54-Lv-9Gt" firstAttribute="width" secondItem="303-U0-Qy7" secondAttribute="width" id="KQ7-2g-Ky4"/>
+                            <constraint firstItem="303-U0-Qy7" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="ac3-Ab-TIR"/>
+                            <constraint firstItem="u54-Lv-9Gt" firstAttribute="top" secondItem="303-U0-Qy7" secondAttribute="bottom" constant="10" id="cTW-uJ-3po"/>
+                            <constraint firstItem="u54-Lv-9Gt" firstAttribute="trailing" secondItem="303-U0-Qy7" secondAttribute="trailing" id="zzi-Ln-YnU"/>
                         </constraints>
                     </view>
                     <connections>
