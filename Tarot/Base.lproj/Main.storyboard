@@ -24,7 +24,7 @@
                                     <action selector="askTheOracle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="h2s-Fs-7es"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Think of a question, then click the button" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u54-Lv-9Gt">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Think of a question, then click the button" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u54-Lv-9Gt">
                                 <rect key="frame" x="225" y="298" width="150" height="61"/>
                                 <accessibility key="accessibilityConfiguration" identifier="answer"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -41,17 +41,16 @@
                                         <rect key="frame" x="0.0" y="0.0" width="150" height="260"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gqz-Ux-xtR" userLabel="Description">
-                                        <rect key="frame" x="0.0" y="0.0" width="150" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gqz-Ux-xtR" userLabel="Description">
+                                        <rect key="frame" x="8" y="8" width="134" height="244"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="Fzw-74-piZ"/>
                                     <constraint firstAttribute="height" constant="260" id="rdL-ir-Enu"/>
@@ -71,8 +70,12 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="imgCard" destination="9v0-NN-Ql0" id="7z4-Yk-O7r"/>
+                        <outlet property="button" destination="U8B-FO-qmM" id="Cxe-Lf-dQ4"/>
+                        <outlet property="cardPlaceholder_HolderUIView" destination="303-U0-Qy7" id="NjR-Sk-5WH"/>
+                        <outlet property="imgCard" destination="9v0-NN-Ql0" id="IXJ-vU-zNb"/>
+                        <outlet property="labelTransparentOverlay" destination="pNq-jk-fkI" id="wjv-gT-F9A"/>
                         <outlet property="lblAnswers" destination="u54-Lv-9Gt" id="5fT-SR-Rbc"/>
+                        <outlet property="lblText" destination="gqz-Ux-xtR" id="U3W-ew-LZf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
